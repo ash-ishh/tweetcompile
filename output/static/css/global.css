@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Light.ttf')
+}
+
+body[size="A4"] {  
+    width: 25cm;
+    height: 29.5cm; 
+}
+
+body {
+    font-family: "Raleway";
+    /* background-color: #38A1F3; */
+    display: block;
+    margin: 0 auto; 
+    padding: 0;
+    overflow: visible;
+    position: relative;
+}
+
+.header {
+    padding:15px;
+    font-weight: bold;
+}
+
+.tweet-header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tweet-user, .tweet-date {
+    padding: 15px;
+}
+
+.tweet-content {
+    padding: 15px;
+    max-width:60%;
+}
+
+.table_style {
+    width: 100%;
+    text-align: right;
+    border-collapse: collapse;
+    vertical-align: bottom;
+}
+
+.table_style  th, td {
+    padding: 1%;
+    border: 1px solid black;
+}
+.table_style th {
+    background-color: darkgray;
+    color: black;
+}
+.table_style tr:nth-child(even) {background-color: #f2f2f2;}
+
+@media print, screen {
+    body {
+        margin: 0;
+        padding: 0;
+        text-rendering: optimizeLegibility;
+        overflow: visible !important;
+    }
+    .newPage {
+        page-break-before: always !important;
+        position: relative;
+    }
+    .absolute {
+        position: absolute;
+    }
+    div{
+        page-break-inside: avoid;
+    }
+}

@@ -1,0 +1,27 @@
+<html>
+        <meta charset="utf-8">
+        <link href="{{ static_base }}/css/global.css" rel="stylesheet">
+        <body size="A4">
+            {% for instance in compilation %}
+                <div class="keyword">
+                {% if instance.name == '' %}
+                    <div class="header"> List of all tweets: </div>
+                {% else %}
+                    <div class="header"> Compilation of tweets containing {{ instance.name }}</div>
+                {% endif %}
+                {% for tweet in instance.tweets %}
+                <div class="tweet">
+                    <div class="tweet-header">
+                        <div class="tweet-user">{{ tweet.name }} @{{ tweet.username }}</div>
+                        <div class="tweet-date">{{ tweet.date }} {{ tweet.time }}</div>
+                    </div> 
+                    <div class="tweet-content">
+                        {{ tweet.tweet}}
+                    </div>
+                </div>
+                <hr>
+                {% endfor %}
+            </div>
+            {% endfor %}
+        </body>
+</html>

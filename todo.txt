@@ -1,0 +1,4 @@
+1 - updating README.md file
+2 - making package of application
+3 - implementing logger
+4 - improving html template
