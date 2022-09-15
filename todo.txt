@@ -1,4 +1,5 @@
-1 - updating README.md file
-2 - making package of application
-3 - implementing logger
-4 - improving html template
+[Done] 1 -  Add README.md
+2 - Make package of application
+3 - Implement logger
+4 - Maybe more control over template through args
+5 - Emoji fallback font in template
